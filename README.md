@@ -1,12 +1,12 @@
 # LLM Interview Prep Repo
 
-This is the English practice branch. The repository is organized around real AI / LLM interview rounds, with coding drills, flashcards, public tests, and timed mock packs.
+This is the English solutions branch. It keeps the same structure as `codex/en-us`, but it is reserved for reference implementations and solution notes so the practice branch stays spoiler-free.
 
-## Practice Flow
+## Usage
 
-1. Start with `docs/how_to_practice.md`
-2. Pick either `docs/roadmaps/zero_to_one_8week.md` or `docs/roadmaps/top10_7day_sprint.md`
-3. Work each problem in the order `problem.md -> starter.py -> test_public.py -> followups.md`
+1. Do the actual practice on `codex/en-us`
+2. Switch to this branch only when you want a reference implementation
+3. Add solutions incrementally by problem id instead of publishing the full answer bank at once
 
 ## Repository Layout
 
@@ -19,4 +19,4 @@ This is the English practice branch. The repository is organized around real AI 
 - `main`: technical hub branch for shared code and sync rules
 - `codex/zh-cn`: Chinese practice branch
 - `codex/zh-cn-solutions`: Chinese solutions branch
-- `codex/en-us-solutions`: English solutions branch
+- `codex/en-us`: English practice branch
