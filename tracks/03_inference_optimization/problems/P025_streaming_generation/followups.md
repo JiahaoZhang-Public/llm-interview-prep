@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How would you surface partial text to a client?
-- What is backpressure in streaming APIs?
-- How do you test streamed outputs deterministically?
+- 如何把 partial text 返回给客户端？
+- 流式 API 的 backpressure 是什么？
+- 如何稳定测试 streaming 输出？

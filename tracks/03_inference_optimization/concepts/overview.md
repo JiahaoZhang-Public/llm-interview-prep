@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## What does KV cache save?
+## KV cache 主要节省了什么？
 
-It avoids recomputing historical keys and values for every generated token.
+避免每个新 token 都重复计算历史位置的 K/V。
 
-## Why use top-p instead of only top-k?
+## 为什么需要 top-p 而不只用 top-k？
 
-Top-p adapts the candidate set size to the shape of the distribution.
+top-p 会随分布形状自适应候选集合大小。
 
-## What problem does dynamic batching solve?
+## dynamic batching 解决了什么问题？
 
-It improves throughput by merging concurrent requests with similar decoding steps.
+把并发请求合并解码，提升吞吐并减少空转。
 
-## Why is prefix caching valuable for chat workloads?
+## prefix caching 对对话场景为什么很有价值？
 
-Many requests share a long prompt prefix, so the cache removes duplicated prefill cost.
+大量请求共享长前缀，缓存后可省掉重复 prefill 成本。

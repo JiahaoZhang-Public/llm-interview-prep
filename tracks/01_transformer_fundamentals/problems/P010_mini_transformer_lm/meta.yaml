@@ -1,6 +1,6 @@
 id: P010
 title: mini_transformer_lm
-display_title: "Implement a mini Transformer language model from scratch"
+display_title: "从零实现 mini Transformer language model"
 track: 01_transformer_fundamentals
 difficulty: 4
 round: core

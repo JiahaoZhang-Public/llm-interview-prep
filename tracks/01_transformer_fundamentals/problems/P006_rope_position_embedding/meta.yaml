@@ -1,6 +1,6 @@
 id: P006
 title: rope_position_embedding
-display_title: "Implement RoPE position embedding"
+display_title: "实现 RoPE position embedding"
 track: 01_transformer_fundamentals
 difficulty: 3
 round: core

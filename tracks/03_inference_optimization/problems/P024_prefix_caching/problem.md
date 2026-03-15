@@ -1,17 +1,17 @@
-# P024 Implement prefix caching
+# P024 实现 prefix caching
 
-## Goal
+## 题目目标
 
-Implement the smallest correct version of the target component, with attention to correctness, shapes, and edge cases.
+围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
 
-## Requirements
+## 要求
 
-- Reuse cached state for shared prompt prefixes.
-- Allow inserting and looking up prefixes.
-- Return cache hits with the longest matching prefix.
+- 复用共享 prompt 前缀的缓存。
+- 支持插入和查找前缀。
+- 命中时返回最长匹配前缀。
 
-## Practice Hint
+## 练习建议
 
-- First make the interface and shapes correct
-- Then add edge-case handling
-- Finish by explaining complexity and engineering tradeoffs out loud
+- 先只把接口和 shape 跑通
+- 再补边界条件和异常输入
+- 最后口头说明时间复杂度与工程 tradeoff

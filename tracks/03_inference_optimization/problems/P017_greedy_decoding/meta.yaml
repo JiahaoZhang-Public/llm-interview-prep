@@ -1,6 +1,6 @@
 id: P017
 title: greedy_decoding
-display_title: "Implement greedy decoding"
+display_title: "实现 greedy decoding"
 track: 03_inference_optimization
 difficulty: 1
 round: serving

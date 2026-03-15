@@ -1,6 +1,6 @@
 id: P001
 title: scaled_dot_product_attention
-display_title: "Implement scaled dot-product attention"
+display_title: "实现 scaled dot-product attention"
 track: 01_transformer_fundamentals
 difficulty: 2
 round: core

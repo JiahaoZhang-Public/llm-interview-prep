@@ -1,6 +1,6 @@
 id: P043
 title: agent_planner
-display_title: "Implement an agent planner"
+display_title: "实现 agent planner"
 track: 06_agents_tool_use
 difficulty: 3
 round: agent

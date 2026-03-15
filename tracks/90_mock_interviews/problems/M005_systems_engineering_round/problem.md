@@ -1,6 +1,6 @@
-# M005 AI Systems Engineering Round
+# M005 AI 系统工程轮
 
-Solve the following pack under a realistic time box, then debrief with the rubric.
+在真实限时下完成下列题目，并按评分标准复盘。
 
 ## Pack
 
@@ -11,6 +11,6 @@ Solve the following pack under a realistic time box, then debrief with the rubri
 
 ## Goals
 
-- Explain throughput, latency, and correctness tradeoffs.
-- Design stable interfaces.
-- Discuss rollout and safeguards.
+- 能解释吞吐、延迟和正确性 tradeoff。
+- 接口设计稳定。
+- 能讨论上线和保护机制。

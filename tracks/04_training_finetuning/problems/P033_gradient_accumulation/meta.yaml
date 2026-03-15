@@ -1,6 +1,6 @@
 id: P033
 title: gradient_accumulation
-display_title: "Implement gradient accumulation"
+display_title: "实现 gradient accumulation"
 track: 04_training_finetuning
 difficulty: 2
 round: training

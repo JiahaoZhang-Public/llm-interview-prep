@@ -1,6 +1,6 @@
 id: P004
 title: transformer_block
-display_title: "Implement a Transformer block"
+display_title: "实现 Transformer block"
 track: 01_transformer_fundamentals
 difficulty: 4
 round: core

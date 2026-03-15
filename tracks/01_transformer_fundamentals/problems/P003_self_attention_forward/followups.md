@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- What is the difference from problem P002?
-- Would you expose qkv projection separately?
-- How do you handle attention masks?
+- 它和 P002 的区别是什么？
+- 是否需要暴露 qkv projection？
+- attention mask 应如何接入？

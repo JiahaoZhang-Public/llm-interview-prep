@@ -1,21 +1,21 @@
-# How to Practice This Repo
+# 如何刷这个仓库
 
-## Recommended Loop
+## 推荐节奏
 
-1. Read the track-level `concepts/overview.md`
-2. Implement the prompt in `starter.py`
-3. Run the local `test_public.py`
-4. Finish with `followups.md` to rehearse the interview discussion
+1. 先按 track 读 `concepts/overview.md`
+2. 再做对应题目的 `starter.py`
+3. 写完后运行该题的 `test_public.py`
+4. 最后看 `followups.md`，补上面试追问
 
-## Minimum Practice Cycle
+## 一次刷题的最小闭环
 
-- Spend 20-40 minutes coding before you look anything up
-- If you are stuck, review the flashcards before looking at solutions
-- Use the public tests to check edge cases
-- End every session with a 3-minute verbal summary: goal, API, complexity, edge cases
+- 先自己写 20-40 分钟
+- 卡住时只允许回看知识卡片，不直接看答案
+- 用 public tests 检查边界
+- 最后用 3 分钟口头复述：题意、接口、复杂度、边界条件
 
-## Branch Usage
+## 分支使用方式
 
-- Practice on `codex/zh-cn` or `codex/en-us`
-- Check solutions only on the paired solutions branch
-- Treat `main` as the shared sync baseline for code and tests
+- 题面练习请在 `codex/zh-cn` 或 `codex/en-us`
+- 参考答案只在 solutions 分支查看
+- `main` 只作为代码和测试同步基线

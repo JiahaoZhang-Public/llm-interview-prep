@@ -1,6 +1,6 @@
 id: P013
 title: train_subword_vocab
-display_title: "Implement subword tokenizer training"
+display_title: "实现 subword tokenizer 训练"
 track: 02_tokenization
 difficulty: 2
 round: tokenization

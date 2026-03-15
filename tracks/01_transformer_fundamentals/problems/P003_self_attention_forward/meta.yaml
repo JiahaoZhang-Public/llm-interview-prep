@@ -1,6 +1,6 @@
 id: P003
 title: self_attention_forward
-display_title: "Implement self-attention forward"
+display_title: "实现 self-attention forward"
 track: 01_transformer_fundamentals
 difficulty: 3
 round: core

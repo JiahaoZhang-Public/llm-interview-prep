@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you cap the number of ReAct steps?
-- What traces should be logged?
-- How do you recover from malformed tool calls?
+- 如何限制 ReAct 最大步数？
+- 应记录哪些 trace？
+- 工具调用格式错误时如何恢复？

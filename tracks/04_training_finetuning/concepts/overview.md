@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## Why do we shift labels in causal LM training?
+## 为什么 causal LM 训练要 shift labels？
 
-Each token predicts the next token, so inputs and targets are offset by one position.
+每个位置都预测下一个 token，所以输入和目标要错开一位。
 
-## What does gradient clipping protect against?
+## gradient clipping 的主要作用是什么？
 
-It prevents unstable updates when gradients spike.
+防止梯度突然爆炸导致更新不稳定。
 
-## Why is LoRA parameter-efficient?
+## LoRA 为什么参数高效？
 
-It learns low-rank adapters instead of updating the full dense weight.
+它只学习低秩增量，而不是更新整块权重。
 
-## When do you need gradient accumulation?
+## 什么时候需要 gradient accumulation？
 
-When the desired effective batch size exceeds memory limits.
+当显存不够但又需要更大的等效 batch size 时。

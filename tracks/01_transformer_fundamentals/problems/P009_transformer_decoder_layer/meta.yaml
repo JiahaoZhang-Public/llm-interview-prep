@@ -1,6 +1,6 @@
 id: P009
 title: transformer_decoder_layer
-display_title: "Implement a Transformer decoder layer"
+display_title: "实现 Transformer decoder layer"
 track: 01_transformer_fundamentals
 difficulty: 4
 round: core

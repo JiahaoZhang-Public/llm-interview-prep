@@ -1,6 +1,6 @@
 id: P039
 title: reranker
-display_title: "Implement a reranker"
+display_title: "实现 reranker"
 track: 05_rag_systems
 difficulty: 2
 round: retrieval

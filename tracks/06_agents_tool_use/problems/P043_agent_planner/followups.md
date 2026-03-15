@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- When should a planner skip tool use entirely?
-- How do you prevent over-planning?
-- Should the plan be editable after observations?
+- 什么时候 planner 应直接跳过工具？
+- 如何避免过度规划？
+- 观察到新信息后计划是否应可修改？

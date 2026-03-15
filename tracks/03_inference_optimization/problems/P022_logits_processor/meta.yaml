@@ -1,6 +1,6 @@
 id: P022
 title: logits_processor
-display_title: "Implement a logits processor with repetition penalty"
+display_title: "实现支持 repetition penalty 的 logits processor"
 track: 03_inference_optimization
 difficulty: 2
 round: serving

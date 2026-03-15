@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## Why are subword tokenizers dominant?
+## 为什么主流 tokenizer 都是 subword？
 
-They balance vocabulary size, OOV robustness, and compressibility.
+它在词表大小、未登录词鲁棒性和压缩率之间取得了平衡。
 
-## What is the practical difference between BPE and WordPiece?
+## BPE 和 WordPiece 的实用差异是什么？
 
-BPE optimizes merge frequency, while WordPiece often chooses merges by likelihood gain.
+BPE 更偏频次合并，WordPiece 更偏基于似然提升选择合并。
 
-## Why must encode/decode be reversible in a practice repo?
+## 为什么练习仓库里 encode/decode 必须可逆？
 
-A non-reversible tokenizer hides bugs in whitespace and special-token handling.
+否则空格、特殊符号和边界处理的 bug 很难暴露。
 
-## What is the point of the attention mask after padding?
+## padding 后为什么还需要 attention mask？
 
-It lets the model ignore padded positions during attention and loss computation.
+让模型在注意力和 loss 计算时忽略补齐位置。

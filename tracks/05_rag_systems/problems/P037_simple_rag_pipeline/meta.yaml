@@ -1,6 +1,6 @@
 id: P037
 title: simple_rag_pipeline
-display_title: "Implement a simple RAG pipeline"
+display_title: "实现简单 RAG pipeline"
 track: 05_rag_systems
 difficulty: 4
 round: retrieval

@@ -1,6 +1,6 @@
 id: P048
 title: llm_cache_system
-display_title: "Implement an LLM cache system"
+display_title: "实现 LLM 缓存系统"
 track: 07_ai_systems_engineering
 difficulty: 2
 round: systems

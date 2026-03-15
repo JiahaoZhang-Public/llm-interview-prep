@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How strict should validation be?
-- How do nested objects change the parser?
-- Which fields are required for tool execution?
+- 校验应该多严格？
+- 如果有嵌套对象，解析器要怎么改？
+- 哪些字段对 tool execution 是必须的？

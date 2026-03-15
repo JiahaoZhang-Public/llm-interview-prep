@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why rate limit tokens instead of requests?
-- Should prompt and output tokens share one budget?
-- How do you handle bursts?
+- 为什么按 token 而不是请求数限流？
+- prompt 和 output token 是否共用预算？
+- 如何支持突发流量？

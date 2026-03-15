@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## What is the tradeoff in model-parallel scheduling?
+## 模型并行调度的核心 tradeoff 是什么？
 
-Higher utilization vs. more communication and placement complexity.
+更高利用率与更复杂通信、放置策略之间的平衡。
 
-## Why rate limit by tokens instead of requests?
+## 为什么要按 token 而不是请求数限流？
 
-Request cost varies widely with prompt and generation lengths.
+不同请求的 prompt 和生成长度差异很大。
 
-## Why cache prompts and embeddings separately?
+## 为什么 prompt cache 和 embedding cache 要分开？
 
-They have different invalidation rules, cost profiles, and hit patterns.
+它们的失效规则、成本结构和命中模式不同。
 
-## What should a minimal LLM service API expose?
+## 最小可用 LLM 服务 API 应暴露什么？
 
-A stable generation endpoint with clear input, config, and output shape.
+稳定的生成接口，以及清晰的输入、配置和输出格式。

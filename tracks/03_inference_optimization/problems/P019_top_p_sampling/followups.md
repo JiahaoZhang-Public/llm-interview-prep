@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why sort by probability first?
-- How do you guard against p <= 0?
-- What happens on a very peaked distribution?
+- 为什么必须先按概率排序？
+- p <= 0 时怎么处理？
+- 如果分布极尖锐，会发生什么？

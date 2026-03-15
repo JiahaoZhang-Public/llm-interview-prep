@@ -1,6 +1,6 @@
 id: P005
 title: positionwise_feedforward
-display_title: "Implement a position-wise feedforward layer"
+display_title: "实现 position-wise feedforward"
 track: 01_transformer_fundamentals
 difficulty: 2
 round: core

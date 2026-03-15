@@ -1,6 +1,6 @@
 id: P018
 title: top_k_sampling
-display_title: "Implement top-k sampling"
+display_title: "实现 top-k sampling"
 track: 03_inference_optimization
 difficulty: 1
 round: serving

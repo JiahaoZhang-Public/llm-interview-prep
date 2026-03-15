@@ -1,6 +1,6 @@
 id: P015
 title: padding_and_attention_mask
-display_title: "Implement padding and attention mask creation"
+display_title: "实现 padding + attention mask"
 track: 02_tokenization
 difficulty: 1
 round: tokenization

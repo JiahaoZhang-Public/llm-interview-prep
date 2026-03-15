@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- What is the cache shape for multi-head attention?
-- How do you reset between requests?
-- How does paged attention change this interface?
+- 多头 attention 的 cache shape 应该是什么？
+- 请求结束后如何 reset？
+- 如果是 paged attention，这个接口怎么变？

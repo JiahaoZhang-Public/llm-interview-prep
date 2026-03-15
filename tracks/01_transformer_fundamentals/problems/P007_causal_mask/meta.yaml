@@ -1,6 +1,6 @@
 id: P007
 title: causal_mask
-display_title: "Implement a causal mask"
+display_title: "实现 causal mask"
 track: 01_transformer_fundamentals
 difficulty: 1
 round: core

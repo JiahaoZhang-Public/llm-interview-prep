@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## What is the minimum loop for tool calling?
+## tool calling 的最小闭环是什么？
 
-Model decides tool -> tool executes -> observation returns to the model.
+模型决策工具 -> 工具执行 -> 结果回注给模型。
 
-## Why parse function schemas strictly?
+## 为什么 function schema 必须严格解析？
 
-Loose parsing leads to brittle tool execution and silent failures.
+解析宽松会让工具调用脆弱且容易静默失败。
 
-## What belongs in short-term memory?
+## short-term memory 应该保存什么？
 
-Only the local task state that should influence the next tool or reasoning step.
+只保存会影响下一步决策的局部任务状态。
 
-## What makes ReAct debuggable?
+## ReAct 为什么容易调试？
 
-Thought, action, and observation are explicit and inspectable.
+Thought、Action、Observation 三段显式可观测。

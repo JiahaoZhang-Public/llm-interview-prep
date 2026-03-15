@@ -1,22 +1,22 @@
-# LLM Interview Prep Repo
+# 大模型面试复习仓库
 
-This is the English practice branch. The repository is organized around real AI / LLM interview rounds, with coding drills, flashcards, public tests, and timed mock packs.
+这是中文练习分支，按真实 AI / LLM 岗位面试轮次组织大模型手撕题、知识卡片、公共测试和模拟面试。
 
-## Practice Flow
+## 训练路径
 
-1. Start with `docs/how_to_practice.md`
-2. Pick either `docs/roadmaps/zero_to_one_8week.md` or `docs/roadmaps/top10_7day_sprint.md`
-3. Work each problem in the order `problem.md -> starter.py -> test_public.py -> followups.md`
+1. 先读 `docs/how_to_practice.md`
+2. 按 `docs/roadmaps/zero_to_one_8week.md` 或 `docs/roadmaps/top10_7day_sprint.md` 开练
+3. 每个题目按 `problem.md -> starter.py -> test_public.py -> followups.md` 的顺序刷
 
-## Repository Layout
+## 仓库结构
 
-- `docs/`: study guides, roadmaps, top-frequency lists, and interview round mappings
-- `src/llm_prep/`: shared interfaces and types
-- `tracks/`: 7 core topic tracks plus 5 mock interview packs
+- `docs/`: 训练说明、路线图、高频题单、轮次说明
+- `src/llm_prep/`: 共享接口与类型定义
+- `tracks/`: 7 个核心主题 + 5 套 Mock Interviews
 
-## Branches
+## 分支说明
 
-- `main`: technical hub branch for shared code and sync rules
-- `codex/zh-cn`: Chinese practice branch
-- `codex/zh-cn-solutions`: Chinese solutions branch
-- `codex/en-us-solutions`: English solutions branch
+- `main`: 技术中枢分支，只放共享代码骨架和同步规则
+- `codex/en-us`: 英文练习分支
+- `codex/zh-cn-solutions`: 中文答案分支
+- `codex/en-us-solutions`: 英文答案分支

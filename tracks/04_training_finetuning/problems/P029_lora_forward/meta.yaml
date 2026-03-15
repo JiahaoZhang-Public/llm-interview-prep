@@ -1,6 +1,6 @@
 id: P029
 title: lora_forward
-display_title: "Implement LoRA forward"
+display_title: "实现 LoRA forward"
 track: 04_training_finetuning
 difficulty: 3
 round: training

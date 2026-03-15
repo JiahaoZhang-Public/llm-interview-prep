@@ -1,14 +1,14 @@
-# Training and Finetuning
+# 训练与微调
 
-Focus on training loops, loss functions, and lightweight adaptation.
+聚焦训练循环、损失函数与轻量微调实现。
 
 ## Problems
 
-- `P026` Implement cross entropy loss
-- `P027` Implement causal LM training loss
-- `P028` Implement gradient clipping
-- `P029` Implement LoRA forward
-- `P030` Implement LoRA merge
-- `P031` Implement parameter freezing
-- `P032` Implement one SFT training step
-- `P033` Implement gradient accumulation
+- `P026` 实现 cross entropy loss
+- `P027` 实现 causal LM training loss
+- `P028` 实现 gradient clipping
+- `P029` 实现 LoRA forward
+- `P030` 实现 LoRA merge
+- `P031` 实现 parameter freezing
+- `P032` 实现 SFT 训练循环
+- `P033` 实现 gradient accumulation

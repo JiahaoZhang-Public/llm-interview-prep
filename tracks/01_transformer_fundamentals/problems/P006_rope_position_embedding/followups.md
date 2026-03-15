@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why rotate half dimensions in pairs?
-- How does RoPE support relative positions?
-- What changes for grouped-query attention?
+- 为什么要成对旋转维度？
+- RoPE 如何体现相对位置信息？
+- 如果是 grouped-query attention 需要改什么？

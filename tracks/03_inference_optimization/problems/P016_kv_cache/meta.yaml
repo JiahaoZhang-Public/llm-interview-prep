@@ -1,6 +1,6 @@
 id: P016
 title: kv_cache
-display_title: "Implement a KV cache"
+display_title: "实现 KV cache"
 track: 03_inference_optimization
 difficulty: 2
 round: serving

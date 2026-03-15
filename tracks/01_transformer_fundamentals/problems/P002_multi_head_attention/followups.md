@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you validate hidden_size % num_heads?
-- Why keep projection weights inside the module?
-- Where would you place dropout?
+- hidden_size 不能整除 num_heads 时怎么办？
+- 为什么投影权重通常放在模块内部？
+- dropout 通常插在哪里？

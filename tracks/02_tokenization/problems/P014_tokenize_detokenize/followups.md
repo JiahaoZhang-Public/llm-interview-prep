@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you preserve whitespace exactly?
-- What special tokens would you reserve?
-- How do you serialize the vocab?
+- 如何精确保留空格？
+- 你会预留哪些 special tokens？
+- 词表如何序列化？

@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How would you tie token embedding and LM head weights?
-- What changes when adding RoPE?
-- How do you compute the causal LM loss on top?
+- 如何做 embedding 和 LM head 权重共享？
+- 如果加入 RoPE 要改哪里？
+- 其上如何计算 causal LM loss？

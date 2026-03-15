@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Where do you cap tool recursion?
-- How do you validate tool arguments?
-- How would you log every tool call?
+- 如何限制工具递归调用次数？
+- 如何校验工具参数？
+- 怎样记录每次 tool call？

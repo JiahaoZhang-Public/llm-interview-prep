@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why normalize before cosine similarity?
-- How do you handle zero vectors?
-- What is the complexity of brute-force search?
+- 为什么要先归一化再算 cosine similarity？
+- 零向量怎么处理？
+- 暴力检索复杂度是多少？

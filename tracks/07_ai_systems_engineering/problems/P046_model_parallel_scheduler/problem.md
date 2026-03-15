@@ -1,17 +1,17 @@
-# P046 Implement model-parallel inference scheduling
+# P046 实现模型并行推理调度
 
-## Goal
+## 题目目标
 
-Implement the smallest correct version of the target component, with attention to correctness, shapes, and edge cases.
+围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
 
-## Requirements
+## 要求
 
-- Assign requests to model shards.
-- Track which shard is responsible for each stage.
-- Return an executable stage plan.
+- 把请求分配到模型分片。
+- 跟踪每个阶段负责的 shard。
+- 返回可执行的 stage plan。
 
-## Practice Hint
+## 练习建议
 
-- First make the interface and shapes correct
-- Then add edge-case handling
-- Finish by explaining complexity and engineering tradeoffs out loud
+- 先只把接口和 shape 跑通
+- 再补边界条件和异常输入
+- 最后口头说明时间复杂度与工程 tradeoff

@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How would you hash token prefixes?
-- What invalidates a prefix cache entry?
-- How do you bound memory growth?
+- token 前缀通常如何做 hash？
+- prefix cache 何时失效？
+- 如何控制内存增长？

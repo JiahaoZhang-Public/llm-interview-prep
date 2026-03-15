@@ -1,6 +1,6 @@
 id: P044
 title: memory_system
-display_title: "Implement a short-term memory system"
+display_title: "实现 memory system"
 track: 06_agents_tool_use
 difficulty: 2
 round: agent

@@ -1,6 +1,6 @@
 id: P002
 title: multi_head_attention
-display_title: "Implement multi-head attention"
+display_title: "实现 multi-head attention"
 track: 01_transformer_fundamentals
 difficulty: 3
 round: core

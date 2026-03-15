@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## Why scale the attention scores?
+## 为什么 attention score 要除以 sqrt(d_k)？
 
-It stabilizes gradients by preventing large dot products from saturating softmax.
+为了防止点积过大导致 softmax 饱和，从而稳定梯度。
 
-## What is the role of the residual path?
+## Residual path 的核心作用是什么？
 
-It preserves the identity signal and helps optimization through deep stacks.
+保留恒等映射路径，让深层网络更容易优化。
 
-## Why does RoPE work well for decoding?
+## RoPE 为什么适合 decoder 推理？
 
-It encodes relative position information directly into Q and K without extra embeddings.
+它把相对位置信息直接编码到 Q/K 中，不需要额外位置表。
 
-## Why is causal masking mandatory in decoder-only LMs?
+## 为什么 decoder-only LM 必须使用 causal mask？
 
-It prevents leakage from future tokens during both training and inference.
+否则训练和推理都会看到未来 token，目标被泄漏。

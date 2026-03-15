@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Should the scorer return calibrated probabilities?
-- How do you preserve the original doc ids?
-- How do you use a cross-encoder here?
+- scorer 需要返回校准概率吗？
+- 如何保留原始文档 id？
+- cross-encoder 在这里怎么接？

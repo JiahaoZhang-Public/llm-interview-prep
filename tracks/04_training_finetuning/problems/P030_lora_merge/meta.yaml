@@ -1,6 +1,6 @@
 id: P030
 title: lora_merge
-display_title: "Implement LoRA merge"
+display_title: "实现 LoRA merge"
 track: 04_training_finetuning
 difficulty: 2
 round: training

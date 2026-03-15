@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Should memory keep tool outputs verbatim?
-- How do you summarize when the window overflows?
-- How is short-term memory different from retrieval memory?
+- tool 输出要不要原样保留？
+- 窗口溢出时如何做摘要？
+- 短期记忆和检索记忆有什么区别？

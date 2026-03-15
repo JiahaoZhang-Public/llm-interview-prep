@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- What statistics do you maintain while training?
-- How do you stop when no merge improves quality?
-- Should special tokens count toward vocab size?
+- 训练时要维护哪些统计量？
+- 如果没有 merge 继续提升质量，何时停止？
+- special tokens 是否计入 vocab size？

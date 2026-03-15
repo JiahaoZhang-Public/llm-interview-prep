@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## What matters most in a mock interview?
+## 模拟面试最重要的是什么？
 
-A realistic time box plus a strict debrief on tradeoffs and edge cases.
+真实限时和严格复盘，比单纯做对更重要。
 
-## How should you review a failed pack?
+## 刷完一套 mock 后应该怎么复盘？
 
-Find the first incorrect assumption, not just the final bug.
+先找第一个错误假设，而不是只盯最终 bug。
 
-## What is the point of a scoring rubric?
+## 为什么要有评分标准？
 
-It separates coding speed from communication, testing, and system judgment.
+把编码速度和表达、测试、系统判断分开评估。
 
-## How should you sequence a pack?
+## 一套 mock 里如何安排做题顺序？
 
-Solve the medium-confidence problem first to build momentum, then tackle the hardest one.
+先做中等把握题建立节奏，再处理最难题。

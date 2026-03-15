@@ -1,6 +1,6 @@
 id: P031
 title: parameter_freezing
-display_title: "Implement parameter freezing"
+display_title: "实现 parameter freezing"
 track: 04_training_finetuning
 difficulty: 1
 round: training

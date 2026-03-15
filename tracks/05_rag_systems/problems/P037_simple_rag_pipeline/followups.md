@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Where should citations be inserted?
-- How do you handle empty retrieval results?
-- What prompt fields matter most?
+- 引用信息应该插在哪里？
+- 检索为空时怎么处理？
+- prompt 中最关键的字段是什么？

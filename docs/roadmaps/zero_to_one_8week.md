@@ -1,10 +1,10 @@
-# 8-Week Zero-to-One Roadmap
+# 8 周从 0 到 1 路线图
 
-1. Week 1: P001-P005 for attention, FFN, and block fundamentals
-2. Week 2: P006-P010 to connect RoPE, decoder layers, and a mini LM
-3. Week 3: P011-P015 for tokenizer fundamentals
-4. Week 4: P016-P021 for sampling and search
-5. Week 5: P022-P025 for serving-focused implementation drills
-6. Week 6: P026-P033 for training and finetuning
-7. Week 7: P034-P045 for RAG and agent loops
-8. Week 8: P046-P050 plus M001-M005 for systems and mock rounds
+1. 第 1 周：P001-P005，补 attention / FFN / block 基础
+2. 第 2 周：P006-P010，串起 RoPE、decoder、mini LM
+3. 第 3 周：P011-P015，系统过一遍 tokenizer
+4. 第 4 周：P016-P021，集中攻克采样与搜索
+5. 第 5 周：P022-P025，补齐 serving 工程题
+6. 第 6 周：P026-P033，训练 / 微调一口气打通
+7. 第 7 周：P034-P045，完整过 RAG + Agent
+8. 第 8 周：P046-P050 + M001-M005，刷系统工程与 Mock Interviews

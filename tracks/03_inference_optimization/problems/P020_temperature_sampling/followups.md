@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why does lower temperature sharpen the distribution?
-- What should happen at temperature=0?
-- How do you combine this with top-k?
+- 为什么低 temperature 会让分布更尖锐？
+- temperature=0 时应该怎么处理？
+- 如何和 top-k 组合？

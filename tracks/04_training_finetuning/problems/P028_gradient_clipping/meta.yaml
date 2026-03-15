@@ -1,6 +1,6 @@
 id: P028
 title: gradient_clipping
-display_title: "Implement gradient clipping"
+display_title: "实现 gradient clipping"
 track: 04_training_finetuning
 difficulty: 1
 round: training

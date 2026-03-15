@@ -1,17 +1,17 @@
-# Flashcards
+# 知识卡片
 
-## Why does chunk overlap matter?
+## 为什么 chunk overlap 很重要？
 
-It preserves context around chunk boundaries and reduces retrieval fragmentation.
+它保留边界上下文，减少关键信息被切断。
 
-## What is MMR optimizing?
+## MMR 优化的目标是什么？
 
-It trades off relevance against redundancy when selecting documents.
+在相关性和多样性之间做平衡。
 
-## Why add a reranker after vector search?
+## 为什么向量召回后还需要 reranker？
 
-Embedding recall is broad but often noisy, while rerankers improve ordering precision.
+向量召回覆盖广但排序不一定精确，reranker 用来提升排序质量。
 
-## What does multi-query retrieval fix?
+## multi-query retrieval 主要修复什么问题？
 
-It broadens recall when a single query phrasing misses relevant documents.
+避免单一 query 表达覆盖不足导致漏召回。

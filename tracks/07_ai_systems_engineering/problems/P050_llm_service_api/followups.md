@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- What generation config should the endpoint expose?
-- How do you stream tokens later without breaking the contract?
-- Where should auth and rate limiting sit?
+- 接口应暴露哪些生成参数？
+- 后续如何在不破坏协议的前提下支持流式返回？
+- 鉴权和限流应放在哪层？

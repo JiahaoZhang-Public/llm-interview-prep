@@ -1,6 +1,6 @@
 id: M003
 title: training_finetuning_round
-display_title: "Training and Finetuning Round"
+display_title: "训练微调轮"
 track: 90_mock_interviews
 difficulty: 4
 round: mock

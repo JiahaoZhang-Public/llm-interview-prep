@@ -1,6 +1,6 @@
-# M001 Core Model Round
+# M001 模型基础轮
 
-Solve the following pack under a realistic time box, then debrief with the rubric.
+在真实限时下完成下列题目，并按评分标准复盘。
 
 ## Pack
 
@@ -11,6 +11,6 @@ Solve the following pack under a realistic time box, then debrief with the rubri
 
 ## Goals
 
-- Finish one core implementation cleanly.
-- Explain normalization, masking, and shape reasoning.
-- Leave 10 minutes for debrief.
+- 完整做出一题核心实现。
+- 能清楚解释归一化、mask 和 shape 推导。
+- 最后预留 10 分钟做复盘。

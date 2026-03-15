@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why add epsilon inside the sqrt?
-- How does RMSNorm differ?
-- Which dimension should be normalized?
+- 为什么 epsilon 要放在开方内部？
+- RMSNorm 和 LayerNorm 的区别是什么？
+- 应沿哪一维归一化？

@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you minimize cross-device hops?
-- What changes for pipeline vs tensor parallelism?
-- How would you queue overloaded shards?
+- 如何减少跨设备 hops？
+- pipeline parallel 和 tensor parallel 有什么区别？
+- 分片过载时如何排队？

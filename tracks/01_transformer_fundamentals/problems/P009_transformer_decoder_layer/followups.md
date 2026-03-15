@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Would you fuse QKV projection?
-- Where does KV cache plug in later?
-- How does decoder-only differ from encoder-decoder blocks?
+- QKV projection 是否应该融合？
+- 后续 KV cache 应该接在哪里？
+- decoder-only 和 encoder-decoder block 的区别是什么？

@@ -1,6 +1,6 @@
 id: P011
 title: bpe_tokenizer
-display_title: "Implement a BPE tokenizer"
+display_title: "实现 BPE tokenizer"
 track: 02_tokenization
 difficulty: 3
 round: tokenization

@@ -1,6 +1,6 @@
 id: P021
 title: beam_search
-display_title: "Implement beam search"
+display_title: "实现 beam search"
 track: 03_inference_optimization
 difficulty: 3
 round: serving

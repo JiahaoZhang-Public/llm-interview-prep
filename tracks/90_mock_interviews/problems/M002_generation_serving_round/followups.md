@@ -1,7 +1,7 @@
-# Scoring and Debrief
+# 评分与复盘
 
-- Total time: 75 minutes
-- Coding correctness: 40%
-- Communication and reasoning: 30%
-- Testing and edge cases: 20%
-- Engineering judgment: 10%
+- 总时长：75 分钟
+- 编码正确性：40%
+- 表达与推导：30%
+- 测试与边界：20%
+- 工程判断：10%

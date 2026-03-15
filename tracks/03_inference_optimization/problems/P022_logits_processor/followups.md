@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Should negative logits be multiplied or divided?
-- How do you combine multiple logits processors?
-- Should EOS receive the penalty?
+- 负 logits 应该乘还是除？
+- 多个 logits processor 如何组合？
+- EOS 要不要被惩罚？

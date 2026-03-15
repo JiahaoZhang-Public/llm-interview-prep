@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why subtract the max logit before exponentiating?
-- How do you support ignore_index?
-- What is label smoothing?
+- 为什么 exp 前要减去最大 logit？
+- 如何支持 ignore_index？
+- 什么是 label smoothing？

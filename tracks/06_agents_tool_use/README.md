@@ -1,11 +1,11 @@
-# Agents and Tool Use
+# Agent 与 Tool Use
 
-Build the control loop that powers planner, memory, and tool-calling questions.
+构建 Planner、Memory、Tool Calling 等常见 Agent 控制循环。
 
 ## Problems
 
-- `P041` Implement a tool-calling agent
-- `P042` Implement function schema parsing
-- `P043` Implement an agent planner
-- `P044` Implement a short-term memory system
-- `P045` Implement a ReAct agent loop
+- `P041` 实现 tool calling agent
+- `P042` 实现 function schema 解析
+- `P043` 实现 agent planner
+- `P044` 实现 memory system
+- `P045` 实现 ReAct agent loop

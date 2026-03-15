@@ -1,6 +1,6 @@
 id: P008
 title: layer_norm
-display_title: "Implement LayerNorm without torch.nn.LayerNorm"
+display_title: "不调用现成 API 实现 LayerNorm"
 track: 01_transformer_fundamentals
 difficulty: 2
 round: core

@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Would you match exact names or prefixes?
-- Why freeze embeddings or lower layers?
-- How do you verify optimizer coverage afterward?
+- 你会匹配精确名字还是前缀？
+- 为什么会冻结 embedding 或底层层？
+- 如何验证 optimizer 覆盖了正确参数？

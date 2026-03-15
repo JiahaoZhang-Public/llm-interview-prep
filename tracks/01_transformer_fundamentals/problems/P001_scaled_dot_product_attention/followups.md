@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How would you avoid numerical instability in softmax?
-- What changes for cross-attention?
-- How do mask shapes broadcast across batches?
+- softmax 数值不稳定时怎么处理？
+- 如果改成 cross-attention，需要改什么？
+- mask 在 batch 维上如何广播？

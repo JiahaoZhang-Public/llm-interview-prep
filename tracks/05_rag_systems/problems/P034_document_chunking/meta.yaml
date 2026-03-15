@@ -1,6 +1,6 @@
 id: P034
 title: document_chunking
-display_title: "Implement document chunking"
+display_title: "实现 document chunking"
 track: 05_rag_systems
 difficulty: 1
 round: retrieval

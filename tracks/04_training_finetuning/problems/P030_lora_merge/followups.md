@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- When is merge useful in serving?
-- Should merge be reversible?
-- How do you validate shape compatibility?
+- merge 对部署有什么帮助？
+- merge 需要可逆吗？
+- 如何验证 shape 是否兼容？

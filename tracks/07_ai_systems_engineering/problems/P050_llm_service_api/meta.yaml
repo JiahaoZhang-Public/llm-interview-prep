@@ -1,6 +1,6 @@
 id: P050
 title: llm_service_api
-display_title: "Implement a simple LLM service API"
+display_title: "实现简单 LLM 服务 API"
 track: 07_ai_systems_engineering
 difficulty: 3
 round: systems

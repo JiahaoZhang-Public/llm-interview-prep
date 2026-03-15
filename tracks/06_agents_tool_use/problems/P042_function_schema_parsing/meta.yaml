@@ -1,6 +1,6 @@
 id: P042
 title: function_schema_parsing
-display_title: "Implement function schema parsing"
+display_title: "实现 function schema 解析"
 track: 06_agents_tool_use
 difficulty: 2
 round: agent

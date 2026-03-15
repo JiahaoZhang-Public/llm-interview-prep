@@ -1,6 +1,6 @@
 id: P020
 title: temperature_sampling
-display_title: "Implement temperature sampling"
+display_title: "实现 temperature sampling"
 track: 03_inference_optimization
 difficulty: 1
 round: serving

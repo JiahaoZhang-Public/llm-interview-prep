@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Would you choose pre-norm or post-norm?
-- Where should dropout go?
-- How would you benchmark activation memory?
+- 你会选 pre-norm 还是 post-norm？
+- dropout 通常放在哪里？
+- 如何估算激活显存？

@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How is this different from prompt caching?
-- How would you bound cache size?
-- When do you evict entries?
+- 它和 prompt cache 的区别是什么？
+- 如何控制缓存大小？
+- 何时驱逐条目？

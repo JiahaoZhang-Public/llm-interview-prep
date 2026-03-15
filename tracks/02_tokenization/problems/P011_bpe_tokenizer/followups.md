@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you represent end-of-word markers?
-- What happens when merges conflict with whitespace?
-- How would you store merges efficiently?
+- 词尾标记通常怎么表示？
+- merge 和空格边界冲突时怎么办？
+- 如何高效存储 merges？

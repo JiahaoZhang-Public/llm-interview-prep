@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you handle k larger than vocab size?
-- Should you renormalize probabilities?
-- What if logits contain ties?
+- 如果 k 大于词表大小怎么办？
+- 是否需要重新归一化概率？
+- 如果 logits 有并列值怎么办？

@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- What is a good unit: characters, tokens, or sentences?
-- How do you keep overlap from duplicating too much content?
-- When should you chunk by structure instead?
+- chunk 的单位该是字符、token 还是句子？
+- 如何避免 overlap 带来过多重复？
+- 什么时候应该按文档结构切分？

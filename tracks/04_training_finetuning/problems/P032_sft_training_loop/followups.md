@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Where should gradient clipping happen?
-- What would you log for debugging?
-- How do you switch between train and eval modes?
+- gradient clipping 应该放哪？
+- 为了调试你会记录什么？
+- train/eval 模式如何切换？

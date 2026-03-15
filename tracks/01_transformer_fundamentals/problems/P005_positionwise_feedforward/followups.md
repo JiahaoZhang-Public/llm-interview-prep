@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Why is the intermediate size typically larger?
-- What changes with SwiGLU?
-- Where does dropout fit in the FFN block?
+- 为什么中间层通常更宽？
+- 如果换成 SwiGLU 要改什么？
+- FFN 中 dropout 放哪里？

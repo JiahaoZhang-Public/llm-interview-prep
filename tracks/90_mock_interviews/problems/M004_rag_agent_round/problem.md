@@ -1,6 +1,6 @@
-# M004 RAG and Agent Round
+# M004 RAG / Agent 轮
 
-Solve the following pack under a realistic time box, then debrief with the rubric.
+在真实限时下完成下列题目，并按评分标准复盘。
 
 ## Pack
 
@@ -11,6 +11,6 @@ Solve the following pack under a realistic time box, then debrief with the rubri
 
 ## Goals
 
-- Explain component boundaries clearly.
-- Handle empty retrieval or malformed tool calls.
-- Discuss observability and failure modes.
+- 清楚表达组件边界。
+- 能处理空召回或错误 tool call。
+- 会讨论可观测性和失败模式。

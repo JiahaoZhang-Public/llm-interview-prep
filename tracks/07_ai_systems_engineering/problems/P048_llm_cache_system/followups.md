@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- What should the cache key include besides the prompt?
-- How do you handle model/version invalidation?
-- Would you cache streamed responses?
+- 除了 prompt，cache key 还应包含什么？
+- 模型版本变化后如何失效？
+- streaming response 要不要缓存？

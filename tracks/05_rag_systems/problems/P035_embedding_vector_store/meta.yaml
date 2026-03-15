@@ -1,6 +1,6 @@
 id: P035
 title: embedding_vector_store
-display_title: "Implement embedding + vector store"
+display_title: "实现 embedding + vector store"
 track: 05_rag_systems
 difficulty: 3
 round: retrieval

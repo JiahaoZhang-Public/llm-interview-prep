@@ -1,17 +1,17 @@
-# P004 Implement a Transformer block
+# P004 实现 Transformer block
 
-## Goal
+## 题目目标
 
-Implement the smallest correct version of the target component, with attention to correctness, shapes, and edge cases.
+围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
 
-## Requirements
+## 要求
 
-- Compose self-attention, residual connections, layer norm, and feed-forward layers.
-- Preserve the input hidden size.
-- Expose a forward pass.
+- 组合 self-attention、residual、layernorm、feed-forward。
+- 保持输入输出 hidden size 一致。
+- 提供 forward。
 
-## Practice Hint
+## 练习建议
 
-- First make the interface and shapes correct
-- Then add edge-case handling
-- Finish by explaining complexity and engineering tradeoffs out loud
+- 先只把接口和 shape 跑通
+- 再补边界条件和异常输入
+- 最后口头说明时间复杂度与工程 tradeoff

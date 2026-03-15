@@ -1,6 +1,6 @@
 id: P032
 title: sft_training_loop
-display_title: "Implement one SFT training step"
+display_title: "实现 SFT 训练循环"
 track: 04_training_finetuning
 difficulty: 3
 round: training

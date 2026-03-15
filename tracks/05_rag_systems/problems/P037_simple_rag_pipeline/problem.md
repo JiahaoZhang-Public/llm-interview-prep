@@ -1,17 +1,17 @@
-# P037 Implement a simple RAG pipeline
+# P037 实现简单 RAG pipeline
 
-## Goal
+## 题目目标
 
-Implement the smallest correct version of the target component, with attention to correctness, shapes, and edge cases.
+围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
 
-## Requirements
+## 要求
 
-- Run query -> retrieve -> prompt -> LLM.
-- Return the final generated answer.
-- Keep the components injectable.
+- 实现 query -> retrieve -> prompt -> LLM。
+- 返回最终答案。
+- 各组件应支持注入替换。
 
-## Practice Hint
+## 练习建议
 
-- First make the interface and shapes correct
-- Then add edge-case handling
-- Finish by explaining complexity and engineering tradeoffs out loud
+- 先只把接口和 shape 跑通
+- 再补边界条件和异常输入
+- 最后口头说明时间复杂度与工程 tradeoff

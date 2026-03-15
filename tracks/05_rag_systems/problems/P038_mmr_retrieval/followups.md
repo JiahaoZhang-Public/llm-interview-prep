@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you choose lambda?
-- Should the first selected document be pure relevance?
-- How do you scale MMR on large candidate sets?
+- lambda 应该怎么选？
+- 第一个文档是否应只看相关性？
+- 大候选集合下如何扩展 MMR？

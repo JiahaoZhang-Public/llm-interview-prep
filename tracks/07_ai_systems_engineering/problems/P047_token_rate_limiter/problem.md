@@ -1,17 +1,17 @@
-# P047 Implement a token rate limiter
+# P047 实现 token rate limiter
 
-## Goal
+## 题目目标
 
-Implement the smallest correct version of the target component, with attention to correctness, shapes, and edge cases.
+围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
 
-## Requirements
+## 要求
 
-- Limit throughput by tokens per second.
-- Track allowance over time.
-- Expose an allow check.
+- 按 tokens/sec 限流。
+- 跟踪随时间恢复的额度。
+- 提供 allow 检查。
 
-## Practice Hint
+## 练习建议
 
-- First make the interface and shapes correct
-- Then add edge-case handling
-- Finish by explaining complexity and engineering tradeoffs out loud
+- 先只把接口和 shape 跑通
+- 再补边界条件和异常输入
+- 最后口头说明时间复杂度与工程 tradeoff

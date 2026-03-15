@@ -1,6 +1,6 @@
 id: P038
 title: mmr_retrieval
-display_title: "Implement MMR retrieval"
+display_title: "实现 MMR retrieval"
 track: 05_rag_systems
 difficulty: 3
 round: retrieval

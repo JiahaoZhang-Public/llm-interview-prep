@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- Should the last position contribute to loss?
-- Where does ignore_index apply?
-- How do you flatten logits efficiently?
+- 最后一个位置是否参与 loss？
+- ignore_index 应作用在哪一步？
+- 如何高效展平 logits？

@@ -1,6 +1,6 @@
 id: P036
 title: cosine_similarity_search
-display_title: "Implement cosine similarity search"
+display_title: "实现 cosine similarity search"
 track: 05_rag_systems
 difficulty: 2
 round: retrieval

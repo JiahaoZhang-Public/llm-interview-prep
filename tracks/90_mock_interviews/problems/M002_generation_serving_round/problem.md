@@ -1,6 +1,6 @@
-# M002 Generation and Serving Round
+# M002 推理优化轮
 
-Solve the following pack under a realistic time box, then debrief with the rubric.
+在真实限时下完成下列题目，并按评分标准复盘。
 
 ## Pack
 
@@ -11,6 +11,6 @@ Solve the following pack under a realistic time box, then debrief with the rubri
 
 ## Goals
 
-- Compare decoding strategies.
-- Explain cache and latency tradeoffs.
-- Show one deterministic test per function.
+- 比较不同 decoding 策略。
+- 能解释 cache 和延迟 tradeoff。
+- 每题至少给出一个可验证测试。

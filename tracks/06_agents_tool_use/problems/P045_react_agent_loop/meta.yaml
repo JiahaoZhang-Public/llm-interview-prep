@@ -1,6 +1,6 @@
 id: P045
 title: react_agent_loop
-display_title: "Implement a ReAct agent loop"
+display_title: "实现 ReAct agent loop"
 track: 06_agents_tool_use
 difficulty: 4
 round: agent

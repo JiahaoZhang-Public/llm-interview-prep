@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How do you inject an embedder for testability?
-- What metadata should you store per vector?
-- How do you batch embedding calls?
+- 如何注入 embedder 以便测试？
+- 每个向量需要存什么 metadata？
+- embedding 调用如何批处理？

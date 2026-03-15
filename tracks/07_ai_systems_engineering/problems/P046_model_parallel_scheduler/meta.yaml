@@ -1,6 +1,6 @@
 id: P046
 title: model_parallel_scheduler
-display_title: "Implement model-parallel inference scheduling"
+display_title: "实现模型并行推理调度"
 track: 07_ai_systems_engineering
 difficulty: 4
 round: systems

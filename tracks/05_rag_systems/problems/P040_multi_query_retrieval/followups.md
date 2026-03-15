@@ -1,5 +1,5 @@
-# Interview Follow-ups
+# 面试追问
 
-- How many rewrites are enough?
-- Where do you deduplicate: by id or by text?
-- How do you score merged candidates?
+- 生成多少个 query 变体合适？
+- 去重应该按 id 还是按文本？
+- 合并候选后如何重新打分？

@@ -1,6 +1,6 @@
 id: P024
 title: prefix_caching
-display_title: "Implement prefix caching"
+display_title: "实现 prefix caching"
 track: 03_inference_optimization
 difficulty: 3
 round: serving
