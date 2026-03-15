@@ -7,4 +7,11 @@ class GenerateRequest(BaseModel):
 
 
 def create_app(generator):
-    raise NotImplementedError("Implement P050 in this starter.")
+    app = FastAPI()
+
+    @app.post("/generate")
+    def generate(request: GenerateRequest):
+        result = generator(request.prompt)
+        return {"generated_text": result}
+
+    return app

@@ -3,13 +3,15 @@ import hashlib
 
 class PromptCache:
     def __init__(self):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.cache = {}
 
     def make_key(self, prompt: str):
-        raise NotImplementedError("Implement P048.make_key().")
+        return hashlib.sha256(prompt.encode()).hexdigest()
 
     def get(self, prompt: str):
-        raise NotImplementedError("Implement P048.get().")
+        key = self.make_key(prompt)
+        return self.cache.get(key)
 
     def put(self, prompt: str, value):
-        raise NotImplementedError("Implement P048.put().")
+        key = self.make_key(prompt)
+        self.cache[key] = value

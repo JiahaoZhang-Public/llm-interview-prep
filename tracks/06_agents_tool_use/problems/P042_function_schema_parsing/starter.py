@@ -1,3 +1,13 @@
 def parse_function_schema(schema):
-    """Starter stub for P042."""
-    raise NotImplementedError("Implement P042 in this starter.")
+    params = schema.get("parameters", {})
+    properties = params.get("properties", {})
+    required = params.get("required", [])
+
+    return {
+        "name": schema["name"],
+        "parameters": {
+            name: prop.get("type", "string")
+            for name, prop in properties.items()
+        },
+        "required": required,
+    }
