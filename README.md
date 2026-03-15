@@ -1,22 +1,38 @@
 # LLM Interview Prep Repo
 
-This is the English practice branch. The repository is organized around real AI / LLM interview rounds, with coding drills, flashcards, public tests, and timed mock packs.
-
-## Practice Flow
-
-1. Start with `docs/how_to_practice.md`
-2. Pick either `docs/roadmaps/zero_to_one_8week.md` or `docs/roadmaps/top10_7day_sprint.md`
-3. Work each problem in the order `problem.md -> starter.py -> test_public.py -> followups.md`
-
-## Repository Layout
-
-- `docs/`: study guides, roadmaps, top-frequency lists, and interview round mappings
-- `src/llm_prep/`: shared interfaces and types
-- `tracks/`: 7 core topic tracks plus 5 mock interview packs
+`main` is the technical hub branch for this repository. It contains the shared Python package, tests, scaffolding tools, and sync rules for the bilingual practice branches.
 
 ## Branches
 
-- `main`: technical hub branch for shared code and sync rules
-- `codex/zh-cn`: Chinese practice branch
-- `codex/zh-cn-solutions`: Chinese solutions branch
-- `codex/en-us-solutions`: English solutions branch
+| Branch | Purpose |
+| --- | --- |
+| `codex/zh-cn` | Chinese practice edition |
+| `codex/en-us` | English practice edition |
+| `codex/zh-cn-solutions` | Chinese solutions branch |
+| `codex/en-us-solutions` | English solutions branch |
+
+## Sync Rules
+
+1. Code, interfaces, and public tests land on `main` first.
+2. User-facing study content is localized on `codex/zh-cn` and `codex/en-us`.
+3. Solutions branches only inherit from their paired language branches.
+4. `starter.py`, `test_public.py`, and `src/llm_prep/**` must stay identical across all study branches.
+
+## Local Development
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+make smoke
+```
+
+## Regeneration
+
+Use the scaffold script when you need to regenerate localized study content:
+
+```bash
+python scripts/scaffold_repo.py --locale main
+python scripts/scaffold_repo.py --locale zh-cn
+python scripts/scaffold_repo.py --locale en-us
+```
