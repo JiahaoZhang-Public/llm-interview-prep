@@ -1,12 +1,12 @@
 # 大模型面试复习仓库
 
-这是中文练习分支，按真实 AI / LLM 岗位面试轮次组织大模型手撕题、知识卡片、公共测试和模拟面试。
+这是中文答案分支。它继承 `codex/zh-cn` 的目录结构，用于存放每题参考答案与题解补充；当前版本先保留答案分支入口和使用约束，避免和纯练习分支混淆。
 
-## 训练路径
+## 使用方式
 
-1. 先读 `docs/how_to_practice.md`
-2. 按 `docs/roadmaps/zero_to_one_8week.md` 或 `docs/roadmaps/top10_7day_sprint.md` 开练
-3. 每个题目按 `problem.md -> starter.py -> test_public.py -> followups.md` 的顺序刷
+1. 做题请优先使用 `codex/zh-cn`
+2. 需要对照实现时再切到当前分支
+3. 参考答案建议按题号逐步补充，不要一次性泄露完整题库
 
 ## 仓库结构
 
@@ -17,6 +17,6 @@
 ## 分支说明
 
 - `main`: 技术中枢分支，只放共享代码骨架和同步规则
+- `codex/zh-cn`: 中文练习分支
 - `codex/en-us`: 英文练习分支
-- `codex/zh-cn-solutions`: 中文答案分支
 - `codex/en-us-solutions`: 英文答案分支
