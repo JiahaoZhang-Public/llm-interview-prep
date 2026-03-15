@@ -1,12 +1,15 @@
 class KVCache:
     def __init__(self):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.keys = []
+        self.values = []
 
     def append(self, key, value):
-        raise NotImplementedError("Implement P016.append().")
+        self.keys.append(key)
+        self.values.append(value)
 
     def get(self):
-        raise NotImplementedError("Implement P016.get().")
+        return self.keys, self.values
 
     def reset(self):
-        raise NotImplementedError("Implement P016.reset().")
+        self.keys = []
+        self.values = []

@@ -1,5 +1,11 @@
 import torch
+import math
+
 
 def scaled_dot_product_attention(q, k, v, mask=None):
-    """Starter stub for P001."""
-    raise NotImplementedError("Implement P001 in this starter.")
+    d_k = q.size(-1)
+    scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(d_k)
+    if mask is not None:
+        scores = scores + mask
+    weights = torch.softmax(scores, dim=-1)
+    return torch.matmul(weights, v)
