@@ -1,0 +1,10 @@
+id: P013
+title: train_subword_vocab
+display_title: "Implement subword tokenizer training"
+track: 02_tokenization
+difficulty: 2
+round: tokenization
+company_tags:
+  - domestic_bigtech
+estimated_minutes: 25
+high_frequency: false

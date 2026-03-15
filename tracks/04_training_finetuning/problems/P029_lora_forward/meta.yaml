@@ -1,0 +1,12 @@
+id: P029
+title: lora_forward
+display_title: "Implement LoRA forward"
+track: 04_training_finetuning
+difficulty: 3
+round: training
+company_tags:
+  - bytedance
+  - openai
+  - anthropic
+estimated_minutes: 30
+high_frequency: true

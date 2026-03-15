@@ -1,0 +1,11 @@
+id: P004
+title: transformer_block
+display_title: "Implement a Transformer block"
+track: 01_transformer_fundamentals
+difficulty: 4
+round: core
+company_tags:
+  - bytedance
+  - openai
+estimated_minutes: 40
+high_frequency: false

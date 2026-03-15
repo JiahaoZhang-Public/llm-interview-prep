@@ -1,0 +1,11 @@
+id: P049
+title: embedding_cache
+display_title: "Implement an embedding cache"
+track: 07_ai_systems_engineering
+difficulty: 2
+round: systems
+company_tags:
+  - anthropic
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false

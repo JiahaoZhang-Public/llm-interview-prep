@@ -1,0 +1,11 @@
+id: P042
+title: function_schema_parsing
+display_title: "Implement function schema parsing"
+track: 06_agents_tool_use
+difficulty: 2
+round: agent
+company_tags:
+  - openai
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false

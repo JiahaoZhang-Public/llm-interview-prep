@@ -1,0 +1,11 @@
+id: P023
+title: dynamic_batching
+display_title: "Implement dynamic batching"
+track: 03_inference_optimization
+difficulty: 3
+round: serving
+company_tags:
+  - openai
+  - anthropic
+estimated_minutes: 35
+high_frequency: false

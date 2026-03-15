@@ -1,0 +1,10 @@
+id: M005
+title: systems_engineering_round
+display_title: "AI Systems Engineering Round"
+track: 90_mock_interviews
+difficulty: 4
+round: mock
+company_tags:
+  - mixed_loop
+estimated_minutes: 80
+high_frequency: false

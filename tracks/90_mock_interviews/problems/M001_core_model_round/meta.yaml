@@ -1,0 +1,10 @@
+id: M001
+title: core_model_round
+display_title: "Core Model Round"
+track: 90_mock_interviews
+difficulty: 4
+round: mock
+company_tags:
+  - mixed_loop
+estimated_minutes: 75
+high_frequency: false

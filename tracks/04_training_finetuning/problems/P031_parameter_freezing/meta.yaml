@@ -1,0 +1,10 @@
+id: P031
+title: parameter_freezing
+display_title: "Implement parameter freezing"
+track: 04_training_finetuning
+difficulty: 1
+round: training
+company_tags:
+  - domestic_bigtech
+estimated_minutes: 15
+high_frequency: false

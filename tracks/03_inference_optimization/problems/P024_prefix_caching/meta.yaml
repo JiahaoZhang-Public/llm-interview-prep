@@ -1,0 +1,11 @@
+id: P024
+title: prefix_caching
+display_title: "Implement prefix caching"
+track: 03_inference_optimization
+difficulty: 3
+round: serving
+company_tags:
+  - anthropic
+  - openai
+estimated_minutes: 30
+high_frequency: false

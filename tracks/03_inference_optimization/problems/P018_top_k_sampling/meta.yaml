@@ -1,0 +1,11 @@
+id: P018
+title: top_k_sampling
+display_title: "Implement top-k sampling"
+track: 03_inference_optimization
+difficulty: 1
+round: serving
+company_tags:
+  - bytedance
+  - openai
+estimated_minutes: 15
+high_frequency: true

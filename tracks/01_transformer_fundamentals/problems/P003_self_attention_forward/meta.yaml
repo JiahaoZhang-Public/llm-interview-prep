@@ -1,0 +1,11 @@
+id: P003
+title: self_attention_forward
+display_title: "Implement self-attention forward"
+track: 01_transformer_fundamentals
+difficulty: 3
+round: core
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 25
+high_frequency: false

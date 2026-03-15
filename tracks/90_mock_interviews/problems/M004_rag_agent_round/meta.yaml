@@ -1,0 +1,10 @@
+id: M004
+title: rag_agent_round
+display_title: "RAG and Agent Round"
+track: 90_mock_interviews
+difficulty: 4
+round: mock
+company_tags:
+  - mixed_loop
+estimated_minutes: 90
+high_frequency: false

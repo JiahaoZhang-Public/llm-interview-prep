@@ -1,0 +1,11 @@
+id: P022
+title: logits_processor
+display_title: "Implement a logits processor with repetition penalty"
+track: 03_inference_optimization
+difficulty: 2
+round: serving
+company_tags:
+  - anthropic
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false

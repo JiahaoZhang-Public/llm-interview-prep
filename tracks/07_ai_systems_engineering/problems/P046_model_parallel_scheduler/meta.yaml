@@ -1,0 +1,11 @@
+id: P046
+title: model_parallel_scheduler
+display_title: "Implement model-parallel inference scheduling"
+track: 07_ai_systems_engineering
+difficulty: 4
+round: systems
+company_tags:
+  - openai
+  - anthropic
+estimated_minutes: 40
+high_frequency: false

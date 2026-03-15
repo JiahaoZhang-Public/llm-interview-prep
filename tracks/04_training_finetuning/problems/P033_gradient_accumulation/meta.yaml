@@ -1,0 +1,11 @@
+id: P033
+title: gradient_accumulation
+display_title: "Implement gradient accumulation"
+track: 04_training_finetuning
+difficulty: 2
+round: training
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 25
+high_frequency: false

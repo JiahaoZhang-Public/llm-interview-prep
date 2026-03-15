@@ -1,0 +1,13 @@
+id: P001
+title: scaled_dot_product_attention
+display_title: "Implement scaled dot-product attention"
+track: 01_transformer_fundamentals
+difficulty: 2
+round: core
+company_tags:
+  - bytedance
+  - openai
+  - anthropic
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: true

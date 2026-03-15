@@ -1,0 +1,11 @@
+id: P006
+title: rope_position_embedding
+display_title: "Implement RoPE position embedding"
+track: 01_transformer_fundamentals
+difficulty: 3
+round: core
+company_tags:
+  - openai
+  - anthropic
+estimated_minutes: 30
+high_frequency: false

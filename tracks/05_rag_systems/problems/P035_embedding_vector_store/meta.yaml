@@ -1,0 +1,11 @@
+id: P035
+title: embedding_vector_store
+display_title: "Implement embedding + vector store"
+track: 05_rag_systems
+difficulty: 3
+round: retrieval
+company_tags:
+  - openai
+  - anthropic
+estimated_minutes: 35
+high_frequency: false

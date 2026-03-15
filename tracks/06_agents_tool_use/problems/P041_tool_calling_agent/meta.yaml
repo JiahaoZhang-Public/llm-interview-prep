@@ -1,0 +1,12 @@
+id: P041
+title: tool_calling_agent
+display_title: "Implement a tool-calling agent"
+track: 06_agents_tool_use
+difficulty: 4
+round: agent
+company_tags:
+  - openai
+  - anthropic
+  - bytedance
+estimated_minutes: 40
+high_frequency: false

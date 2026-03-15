@@ -1,0 +1,11 @@
+id: P038
+title: mmr_retrieval
+display_title: "Implement MMR retrieval"
+track: 05_rag_systems
+difficulty: 3
+round: retrieval
+company_tags:
+  - openai
+  - anthropic
+estimated_minutes: 30
+high_frequency: false

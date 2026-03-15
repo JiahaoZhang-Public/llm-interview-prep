@@ -1,0 +1,11 @@
+id: P030
+title: lora_merge
+display_title: "Implement LoRA merge"
+track: 04_training_finetuning
+difficulty: 2
+round: training
+company_tags:
+  - anthropic
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false

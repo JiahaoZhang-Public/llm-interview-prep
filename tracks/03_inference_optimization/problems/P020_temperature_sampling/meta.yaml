@@ -1,0 +1,10 @@
+id: P020
+title: temperature_sampling
+display_title: "Implement temperature sampling"
+track: 03_inference_optimization
+difficulty: 1
+round: serving
+company_tags:
+  - domestic_bigtech
+estimated_minutes: 15
+high_frequency: false

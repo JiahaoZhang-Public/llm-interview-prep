@@ -1,0 +1,11 @@
+id: P021
+title: beam_search
+display_title: "Implement beam search"
+track: 03_inference_optimization
+difficulty: 3
+round: serving
+company_tags:
+  - openai
+  - bytedance
+estimated_minutes: 35
+high_frequency: true

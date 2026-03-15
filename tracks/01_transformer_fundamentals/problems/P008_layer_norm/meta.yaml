@@ -1,0 +1,11 @@
+id: P008
+title: layer_norm
+display_title: "Implement LayerNorm without torch.nn.LayerNorm"
+track: 01_transformer_fundamentals
+difficulty: 2
+round: core
+company_tags:
+  - bytedance
+  - openai
+estimated_minutes: 20
+high_frequency: false

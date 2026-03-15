@@ -1,0 +1,11 @@
+id: P034
+title: document_chunking
+display_title: "Implement document chunking"
+track: 05_rag_systems
+difficulty: 1
+round: retrieval
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 15
+high_frequency: false

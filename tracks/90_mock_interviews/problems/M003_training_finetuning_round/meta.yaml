@@ -1,0 +1,10 @@
+id: M003
+title: training_finetuning_round
+display_title: "Training and Finetuning Round"
+track: 90_mock_interviews
+difficulty: 4
+round: mock
+company_tags:
+  - mixed_loop
+estimated_minutes: 70
+high_frequency: false

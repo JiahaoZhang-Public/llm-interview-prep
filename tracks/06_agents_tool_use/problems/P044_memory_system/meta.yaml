@@ -1,0 +1,10 @@
+id: P044
+title: memory_system
+display_title: "Implement a short-term memory system"
+track: 06_agents_tool_use
+difficulty: 2
+round: agent
+company_tags:
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false

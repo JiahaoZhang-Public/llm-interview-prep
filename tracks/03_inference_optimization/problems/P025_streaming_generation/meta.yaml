@@ -1,0 +1,11 @@
+id: P025
+title: streaming_generation
+display_title: "Implement streaming generation"
+track: 03_inference_optimization
+difficulty: 2
+round: serving
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 25
+high_frequency: false

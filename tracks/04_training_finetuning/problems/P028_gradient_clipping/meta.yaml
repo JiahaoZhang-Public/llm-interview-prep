@@ -1,0 +1,10 @@
+id: P028
+title: gradient_clipping
+display_title: "Implement gradient clipping"
+track: 04_training_finetuning
+difficulty: 1
+round: training
+company_tags:
+  - domestic_bigtech
+estimated_minutes: 15
+high_frequency: false

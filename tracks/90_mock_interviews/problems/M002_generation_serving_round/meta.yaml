@@ -1,0 +1,10 @@
+id: M002
+title: generation_serving_round
+display_title: "Generation and Serving Round"
+track: 90_mock_interviews
+difficulty: 4
+round: mock
+company_tags:
+  - mixed_loop
+estimated_minutes: 75
+high_frequency: false

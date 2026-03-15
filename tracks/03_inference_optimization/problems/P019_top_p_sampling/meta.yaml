@@ -1,0 +1,11 @@
+id: P019
+title: top_p_sampling
+display_title: "Implement top-p sampling"
+track: 03_inference_optimization
+difficulty: 2
+round: serving
+company_tags:
+  - openai
+  - anthropic
+estimated_minutes: 20
+high_frequency: true

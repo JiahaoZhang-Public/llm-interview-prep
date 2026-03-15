@@ -1,0 +1,11 @@
+id: P012
+title: wordpiece_tokenizer
+display_title: "Implement a WordPiece tokenizer"
+track: 02_tokenization
+difficulty: 3
+round: tokenization
+company_tags:
+  - bytedance
+  - openai
+estimated_minutes: 35
+high_frequency: false

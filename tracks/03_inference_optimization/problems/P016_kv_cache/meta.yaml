@@ -1,0 +1,12 @@
+id: P016
+title: kv_cache
+display_title: "Implement a KV cache"
+track: 03_inference_optimization
+difficulty: 2
+round: serving
+company_tags:
+  - openai
+  - anthropic
+  - bytedance
+estimated_minutes: 25
+high_frequency: true

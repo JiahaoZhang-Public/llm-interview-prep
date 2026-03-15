@@ -1,0 +1,10 @@
+id: P015
+title: padding_and_attention_mask
+display_title: "Implement padding and attention mask creation"
+track: 02_tokenization
+difficulty: 1
+round: tokenization
+company_tags:
+  - domestic_bigtech
+estimated_minutes: 15
+high_frequency: false

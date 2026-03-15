@@ -1,0 +1,11 @@
+id: P050
+title: llm_service_api
+display_title: "Implement a simple LLM service API"
+track: 07_ai_systems_engineering
+difficulty: 3
+round: systems
+company_tags:
+  - openai
+  - domestic_bigtech
+estimated_minutes: 30
+high_frequency: false

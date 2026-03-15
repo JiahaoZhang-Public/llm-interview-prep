@@ -1,0 +1,12 @@
+id: P002
+title: multi_head_attention
+display_title: "Implement multi-head attention"
+track: 01_transformer_fundamentals
+difficulty: 3
+round: core
+company_tags:
+  - bytedance
+  - openai
+  - anthropic
+estimated_minutes: 35
+high_frequency: true

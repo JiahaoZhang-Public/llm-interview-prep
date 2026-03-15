@@ -1,0 +1,12 @@
+id: P011
+title: bpe_tokenizer
+display_title: "Implement a BPE tokenizer"
+track: 02_tokenization
+difficulty: 3
+round: tokenization
+company_tags:
+  - bytedance
+  - openai
+  - domestic_bigtech
+estimated_minutes: 35
+high_frequency: true

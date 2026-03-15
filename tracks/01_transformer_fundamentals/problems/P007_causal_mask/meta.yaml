@@ -1,0 +1,11 @@
+id: P007
+title: causal_mask
+display_title: "Implement a causal mask"
+track: 01_transformer_fundamentals
+difficulty: 1
+round: core
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 10
+high_frequency: false

@@ -1,0 +1,11 @@
+id: P047
+title: token_rate_limiter
+display_title: "Implement a token rate limiter"
+track: 07_ai_systems_engineering
+difficulty: 2
+round: systems
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false

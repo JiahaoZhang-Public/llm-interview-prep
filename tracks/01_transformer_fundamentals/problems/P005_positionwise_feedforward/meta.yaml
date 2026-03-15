@@ -1,0 +1,11 @@
+id: P005
+title: positionwise_feedforward
+display_title: "Implement a position-wise feedforward layer"
+track: 01_transformer_fundamentals
+difficulty: 2
+round: core
+company_tags:
+  - bytedance
+  - domestic_bigtech
+estimated_minutes: 20
+high_frequency: false
