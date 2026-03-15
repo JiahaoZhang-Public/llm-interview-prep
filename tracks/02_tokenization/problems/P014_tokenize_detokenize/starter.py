@@ -1,12 +1,19 @@
 class RoundTripTokenizer:
     def __init__(self):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.token_to_id = {}
+        self.id_to_token = {}
 
     def fit(self, corpus):
-        raise NotImplementedError("Implement P014.fit().")
+        token_id = 0
+        for text in corpus:
+            for word in text.split():
+                if word not in self.token_to_id:
+                    self.token_to_id[word] = token_id
+                    self.id_to_token[token_id] = word
+                    token_id += 1
 
     def encode(self, text: str):
-        raise NotImplementedError("Implement P014.encode().")
+        return [self.token_to_id[word] for word in text.split()]
 
     def decode(self, token_ids):
-        raise NotImplementedError("Implement P014.decode().")
+        return " ".join(self.id_to_token[tid] for tid in token_ids)

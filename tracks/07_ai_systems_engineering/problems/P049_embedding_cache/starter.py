@@ -1,6 +1,9 @@
 class EmbeddingCache:
     def __init__(self, embedder):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.embedder = embedder
+        self.cache = {}
 
     def get_embedding(self, text: str):
-        raise NotImplementedError("Implement P049.get_embedding().")
+        if text not in self.cache:
+            self.cache[text] = self.embedder(text)
+        return self.cache[text]

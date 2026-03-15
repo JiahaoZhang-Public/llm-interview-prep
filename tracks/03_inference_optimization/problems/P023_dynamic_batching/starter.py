@@ -1,9 +1,12 @@
 class DynamicBatcher:
     def __init__(self, max_batch_size: int):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.max_batch_size = max_batch_size
+        self.queue = []
 
     def enqueue(self, request):
-        raise NotImplementedError("Implement P023.enqueue().")
+        self.queue.append(request)
 
     def flush(self):
-        raise NotImplementedError("Implement P023.flush().")
+        batch = self.queue[:self.max_batch_size]
+        self.queue = self.queue[self.max_batch_size:]
+        return batch

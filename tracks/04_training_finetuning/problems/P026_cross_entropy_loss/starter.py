@@ -1,5 +1,6 @@
 import torch
+import torch.nn.functional as F
+
 
 def cross_entropy_loss(logits, targets):
-    """Starter stub for P026."""
-    raise NotImplementedError("Implement P026 in this starter.")
+    return F.cross_entropy(logits, targets)

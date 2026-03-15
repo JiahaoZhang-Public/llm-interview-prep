@@ -1,6 +1,10 @@
 class ModelParallelScheduler:
     def __init__(self, shard_ids):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.shard_ids = shard_ids
 
     def schedule(self, request_id: str, stages):
-        raise NotImplementedError("Implement P046.schedule().")
+        plan = []
+        for i, stage in enumerate(stages):
+            shard = self.shard_ids[i % len(self.shard_ids)]
+            plan.append({"request_id": request_id, "stage": stage, "shard": shard})
+        return plan

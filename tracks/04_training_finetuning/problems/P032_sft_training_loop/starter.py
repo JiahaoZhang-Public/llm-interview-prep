@@ -1,5 +1,11 @@
 import torch
+import torch.nn.functional as F
+
 
 def sft_train_step(model, batch, optimizer):
-    """Starter stub for P032."""
-    raise NotImplementedError("Implement P032 in this starter.")
+    optimizer.zero_grad()
+    logits = model(batch["inputs"])
+    loss = F.cross_entropy(logits, batch["labels"])
+    loss.backward()
+    optimizer.step()
+    return loss.item()

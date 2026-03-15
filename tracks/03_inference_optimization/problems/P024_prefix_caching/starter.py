@@ -1,9 +1,18 @@
 class PrefixCache:
     def __init__(self):
-        raise NotImplementedError("Initialize this class in the starter.")
+        self.cache = {}
 
     def add_prefix(self, prefix_tokens, value):
-        raise NotImplementedError("Implement P024.add_prefix().")
+        self.cache[tuple(prefix_tokens)] = value
 
     def lookup(self, prefix_tokens):
-        raise NotImplementedError("Implement P024.lookup().")
+        prefix_tokens = tuple(prefix_tokens)
+        best_value = None
+        best_len = 0
+        for key, value in self.cache.items():
+            klen = len(key)
+            if klen <= len(prefix_tokens) and prefix_tokens[:klen] == key:
+                if klen > best_len:
+                    best_len = klen
+                    best_value = value
+        return best_value
