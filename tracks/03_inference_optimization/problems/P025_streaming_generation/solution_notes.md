@@ -1,32 +1,43 @@
-# P025 Streaming Generation — Solution Notes
+# P025 Streaming Generation Solution Notes
 
 ## Core Approach
 
-1. Use a Python generator function that yields tokens one at a time as they are generated
-2. Each iteration: run the model forward pass, select the next token, yield it
-3. The caller receives tokens incrementally without waiting for the full sequence
-4. Use `yield` to produce each token, maintaining generation state between calls
-5. Stop yielding when EOS is produced or max_length is reached
+1. Use Python generator (`yield`) to output newly generated tokens one at a time
+2. Each step: call `step_fn` to get next token, append to sequence (maintaining context), then yield
+3. Stop on EOS or when max_new_tokens is reached
+4. Callers can process tokens as they're generated (e.g., SSE push to frontend)
+
+**Generator advantages:**
+- Lazy evaluation — no need to wait for all tokens
+- Memory efficient (no upfront allocation of the entire output sequence)
+- Naturally supports early termination (caller stops iterating)
 
 ## Interview Oral Template
 
-> "Streaming generation uses a Python generator to yield tokens one by one
-> as they're produced, rather than waiting for the entire sequence to finish.
-> The function runs the model forward pass, picks the next token via greedy
-> or sampling, yields it to the caller, then continues. This is essential
-> for chat interfaces where users expect to see text appear progressively.
-> Under the hood, the generator preserves its local state between yields,
-> so the KV cache and running sequence are maintained naturally."
+> "Streaming generation's core is using a Python generator for token-by-token output.
+> In a loop, each step calls step_fn to get the next token,
+> appends it to the context sequence (so subsequent step_fn calls see the history),
+> then yields it out. Stops on EOS or max tokens.
+> 
+> In production, this generator is wrapped into SSE (Server-Sent Events)
+> or WebSocket streams pushed to the frontend. Users see text appearing gradually.
+> 
+> Key technical details to be aware of:
+> 1. Detokenization subword boundaries — a token might be half a character,
+>    need to buffer until a complete character forms before sending.
+> 2. Client disconnection should cancel generation to avoid wasting GPU.
+> 3. Whether to yield the EOS token depends on the use case — APIs typically don't, internal interfaces may."
 
 ## Common Pitfalls
 
-- **Not using yield**: Using a list and appending defeats the purpose — must use `yield` for true streaming
-- **Forgetting KV cache**: Without caching, each yield requires reprocessing the entire sequence from scratch
-- **EOS handling**: Must stop the generator when EOS is produced — don't yield the EOS token itself to the user
-- **Backpressure**: If the consumer is slower than generation, tokens queue up in memory — consider async generators for production use
+- **EOS check timing**: Yield after check, then break — ensures EOS token is output (if desired)
+- **Token context append**: Must append token to sequence before the next step_fn call, otherwise step_fn can't see history
+- **Detokenization trap**: Subword tokens may be partial characters (e.g., "Hel"+"lo"), sending them raw causes garbled text
+- **Cancellation mechanism**: Real systems must detect client disconnection and break to stop generation
+- **max_new_tokens=0**: Should return an empty generator without calling step_fn
 
 ## Complexity
 
-- Time: O(d) per token with KV cache (single token forward pass), O(T · n · d) total for T tokens
-- Space: O(n · layers · d) for the KV cache that persists across yields
-- Latency: Time-to-first-token equals one forward pass; subsequent tokens arrive at model speed
+- Time: O(T * C), T = generated token count, C = step_fn cost
+- Space: O(T) for the growing token sequence (context keeps growing)
+- Generator itself has near-zero overhead

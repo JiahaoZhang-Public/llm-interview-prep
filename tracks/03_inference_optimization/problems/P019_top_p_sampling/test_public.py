@@ -19,3 +19,43 @@ def test_top_p_sample_returns_valid_index() -> None:
     except Exception as exc:  # pragma: no cover
         skip_not_implemented(exc)
     assert token_id in {0, 1, 2}
+
+
+@pytest.mark.practice
+@pytest.mark.inference
+@pytest.mark.difficulty_2
+def test_top_p_sharp_distribution() -> None:
+    results = set()
+    try:
+        for seed in range(20):
+            random.seed(seed)
+            results.add(starter.top_p_sample([100.0, 0.0, 0.0], p=0.5))
+    except Exception as exc:  # pragma: no cover
+        skip_not_implemented(exc)
+    assert results == {0}, f"Sharp distribution should only return 0, got {results}"
+
+
+@pytest.mark.practice
+@pytest.mark.inference
+@pytest.mark.difficulty_2
+def test_top_p_full_distribution() -> None:
+    results = set()
+    try:
+        for seed in range(100):
+            random.seed(seed)
+            results.add(starter.top_p_sample([1.0, 1.0, 1.0], p=1.0))
+    except Exception as exc:  # pragma: no cover
+        skip_not_implemented(exc)
+    assert len(results) >= 2, f"p=1.0 uniform should sample diverse tokens, got {results}"
+
+
+@pytest.mark.practice
+@pytest.mark.inference
+@pytest.mark.difficulty_2
+def test_top_p_with_negative_logits() -> None:
+    random.seed(42)
+    try:
+        token_id = starter.top_p_sample([-1.0, -2.0, -10.0], p=0.9)
+    except Exception as exc:  # pragma: no cover
+        skip_not_implemented(exc)
+    assert token_id in {0, 1, 2}

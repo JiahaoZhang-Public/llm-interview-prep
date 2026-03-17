@@ -1,33 +1,31 @@
-# P017 Greedy Decoding — Solution Notes
+# P017 Greedy Decoding Solution Notes
 
 ## Core Approach
 
-1. At each step, select the token with the highest probability (argmax over logits)
-2. Append the selected token to the sequence and feed it back as input for the next step
-3. Stop when an EOS token is generated or max_length is reached
-4. No randomness — the output is fully deterministic given the same input
-
-Algorithm: `next_token = argmax(logits)` at every step.
+1. Take argmax of logits to return the highest-probability token id
+2. Simplest decoding strategy, fully deterministic, single pass
+3. **No softmax needed**: softmax is a monotonically increasing transform that doesn't change argmax
 
 ## Interview Oral Template
 
-> "Greedy decoding is the simplest generation strategy. At each time step,
-> I take the argmax of the output logits to pick the most probable next token.
-> I append it to the sequence and repeat until EOS or max length. It's fast
-> and deterministic but often produces repetitive or suboptimal text because
-> it never explores alternatives. A locally optimal choice at each step
-> doesn't guarantee a globally optimal sequence — that's why beam search
-> and sampling methods exist."
+> "Greedy decoding selects the token with the highest logit at each step — simply argmax.
+> No softmax is needed because softmax is monotonic and doesn't change the max position.
+> Pros: simple, fast, deterministic. Cons: greedy per-step ≠ globally optimal —
+> the best token now might lead to worse choices later.
+> Another issue is repetition degeneration: greedy tends to produce 'I think that I think that...' loops.
+> That's why real systems use beam search (keeping multiple paths)
+> or sampling (top-k/top-p + temperature for randomness)."
 
 ## Common Pitfalls
 
-- **Repetition loops**: Greedy decoding is prone to degenerate repetition (e.g., "the the the...") — no built-in diversity
-- **Not stopping at EOS**: Must check for the EOS token at each step; without this, generation runs to max_length
-- **Confusing logits and probabilities**: Argmax of logits equals argmax of softmax(logits), so applying softmax is unnecessary for greedy
-- **KV cache**: In practice, greedy decoding should use KV cache to avoid recomputing attention for all previous tokens
+- **Confusing with softmax then argmax**: Greedy only needs argmax, no probability computation
+- **No diversity**: Same input always produces same output — unsuitable for creative generation
+- **Repetition degeneration**: Greedy is extremely prone to producing repetitive text
+- **Tie handling**: When multiple logits are equal, Python's max returns the first — mention this in interviews
+- **Batch support**: Real systems use `torch.argmax(logits, dim=-1)` for batched greedy
 
 ## Complexity
 
-- Time: O(T · n · d) where T is generated length, n is total sequence length, d is model dimension
-- Space: O(n · d) for KV cache (or O(T · n · d) without cache)
-- Fastest decoding method — single forward pass per token with no branching
+- Time: O(V), V = vocab size (single pass)
+- Space: O(1)
+- On GPU, `torch.argmax` is effectively O(V/parallelism), very fast

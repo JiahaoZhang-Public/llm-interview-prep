@@ -1,34 +1,38 @@
-# P020 Temperature Sampling — Solution Notes
+# P020 Temperature Sampling Solution Notes
 
 ## Core Approach
 
-1. Divide logits by a temperature parameter T before applying softmax
-2. `probs = softmax(logits / T)`
-3. Sample from the resulting probability distribution
-4. T > 1 flattens the distribution (more random/creative), T < 1 sharpens it (more deterministic)
-5. T → 0 approaches greedy decoding; T → inf approaches uniform random sampling
+1. Divide logits by temperature: `scaled_logits = logits / T`
+2. Apply softmax to scaled logits to get probabilities
+3. Sample randomly according to probabilities
+4. T < 1 sharpens (toward greedy), T > 1 flattens (more random), T = 1 no change
 
-Key formula: `P(token_i) = exp(logit_i / T) / sum(exp(logit_j / T))`
+**Mathematical intuition:**
+- In softmax(z/T), T scales the differences between logits
+- Original logit gap = Δ; after dividing by T, gap = Δ/T
+- T < 1 → Δ/T > Δ → gap amplified → sharper distribution
+- T > 1 → Δ/T < Δ → gap shrunk → flatter distribution
 
 ## Interview Oral Template
 
-> "Temperature sampling controls the randomness of generation by scaling
-> logits before softmax. Dividing by T greater than 1 flattens the
-> distribution — all tokens become more equally likely, producing diverse
-> but potentially incoherent text. Dividing by T less than 1 sharpens the
-> distribution — the model becomes more confident in its top choices, making
-> output more focused. In the limit, T approaching zero is greedy decoding.
-> Temperature is often the first knob to tune for generation quality."
+> "Temperature is the most fundamental knob for controlling LLM generation randomness.
+> It works by dividing logits by T before softmax:
+> T < 1 amplifies logit differences, making high-probability tokens even more dominant — more deterministic.
+> T > 1 shrinks differences, flattening the distribution — more random.
+> T → 0 degenerates to greedy, T → ∞ becomes uniform.
+> Typical values: 0-0.2 for code generation (accuracy needed), 0.7-1.0 for creative writing.
+> Two key implementation notes: T=0 must be special-cased to argmax,
+> and low T amplifies logits which may cause exp overflow, so subtract max before softmax."
 
 ## Common Pitfalls
 
-- **Temperature of 0**: Division by zero — must handle T=0 as a special case (use argmax/greedy instead)
-- **Applying temperature after softmax**: Must apply before softmax — dividing probabilities by T is mathematically different
-- **Confusing with top-k/top-p**: Temperature changes the shape of the full distribution; top-k/top-p truncate it — they're complementary techniques
-- **Wrong scaling direction**: Dividing by T > 1 flattens (not sharpens); a common confusion
+- **temperature = 0 division by zero**: Must special-case as greedy (not required in this problem, but mention in interviews)
+- **Scale then softmax**: Not softmax then scale — they're mathematically different
+- **Numerical stability**: Low temperature amplifies logits, exp may overflow → subtract max(scaled) first
+- **Combination order with top-k/top-p**: Standard practice is temperature scale first, then top-k/top-p truncation
+- **Default values across APIs**: OpenAI defaults T=1, Anthropic defaults T=1
 
 ## Complexity
 
-- Time: O(V) to scale logits and sample, where V is vocabulary size
-- Space: O(V) for the probability distribution
-- Negligible overhead on top of the model forward pass
+- Time: O(V) (traversal + softmax + sampling)
+- Space: O(V) (storing scaled logits and probs)

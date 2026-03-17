@@ -1,33 +1,37 @@
-# P023 Dynamic Batching — Solution Notes
+# P023 Dynamic Batching Solution Notes
 
 ## Core Approach
 
-1. Maintain a FIFO queue of incoming inference requests
-2. When ready to process, drain up to max_batch_size requests from the queue
-3. Pad sequences in the batch to the same length and run inference together
-4. Return results to each request's caller
-5. Can also use a timeout — if the queue has any items after a wait period, process even if batch isn't full
+1. Maintain a FIFO request queue
+2. `enqueue` adds new requests to the tail
+3. `flush` takes out up to `max_batch_size` requests as a batch
+4. Removed requests are taken from the queue, preserving insertion order
+
+This is the most basic batching strategy in LLM serving; real systems build many optimizations on top.
 
 ## Interview Oral Template
 
-> "Dynamic batching collects incoming requests into a FIFO queue and groups
-> them into batches up to a maximum size for efficient GPU utilization.
-> Instead of processing one request at a time, we wait briefly to accumulate
-> requests, then pad them to equal length and run a single batched forward
-> pass. This amortizes GPU kernel launch overhead and increases throughput.
-> The tradeoff is slightly higher latency for individual requests due to
-> queuing wait time, so production systems typically use a timeout to bound
-> the maximum wait."
+> "Dynamic batching is the foundation of LLM serving systems.
+> The simplest version is a FIFO queue with a size cap: requests enqueue on arrival,
+> the inference engine calls flush to grab a batch when ready.
+> 
+> This is better than static batching (waiting to fill N requests) because it doesn't make requests wait too long.
+> But the more advanced approach is continuous batching —
+> iteration-level scheduling where completed requests exit and new ones join at every decode step.
+> vLLM and TGI both use this, achieving 2-3x throughput over static batching.
+> 
+> Real systems also consider: padding waste from varying request lengths (bucket by length),
+> priority scheduling (VIP requests first), and queue timeout handling."
 
 ## Common Pitfalls
 
-- **Unbounded queue**: Without a max queue size, memory can grow unboundedly under load — need backpressure
-- **Not handling variable lengths**: Sequences in a dynamic batch have different lengths; must pad and mask correctly
-- **Timeout tuning**: Too short defeats batching benefits; too long hurts latency — typical values are 5-50ms
-- **Thread safety**: The queue is accessed by multiple request handlers concurrently — must be thread-safe (use `queue.Queue` or `asyncio.Queue`)
+- **Empty queue flush**: Must return empty list, not raise an exception
+- **Varying request lengths**: Different lengths in a batch require padding to the longest for GPU computation
+- **Thread safety**: When enqueue and flush run in different threads, locking is needed (not tested here)
+- **Flush timing**: Timer-based vs count-based vs whichever-comes-first → latency vs throughput tradeoff
 
 ## Complexity
 
-- Time: O(B · L_max · d) per batch, where B is batch size and L_max is the longest sequence
-- Space: O(B · L_max) for the padded batch
-- Throughput scales roughly linearly with batch size up to GPU memory limits
+- enqueue: O(1)
+- flush: O(B), B = batch size taken out
+- List slicing is simple but O(N) for element shifting; `collections.deque` is more efficient
