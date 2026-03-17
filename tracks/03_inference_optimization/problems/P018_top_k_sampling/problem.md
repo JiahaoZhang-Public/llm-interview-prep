@@ -1,17 +1,33 @@
-# P018 实现 top-k sampling
+# P018 实现 Top-K Sampling
+
+## 背景
+
+**Top-K sampling** 是一种受限随机采样策略：只保留概率最高的 K 个 token，在 top-K 候选集内重新归一化后随机采样。
+
+**K=1 退化为 greedy；K 的局限性是固定不变**——分布尖锐时 K=50 太多，分布平坦时 K=50 太少。
 
 ## 题目目标
 
-围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
+实现纯 Python 的 top-k sampling。
 
-## 要求
+## 接口规范
 
-- 输入 logits 和 k。
-- 只在 top-k 候选中采样。
-- 返回一个 token id。
+```python
+def top_k_sample(logits: list[float], k: int) -> int:
+    """在 logits 的 top-k 候选集中随机采样"""
+```
+
+## 约束
+
+| 条件 | 说明 |
+|------|------|
+| k 范围 | 1 <= k <= len(logits) |
+| 返回值 | 必须是 top-k 中某个原始 index |
+| 数值稳定性 | softmax 前减去 max logit |
+| 随机性 | 使用 `random` 模块 |
 
 ## 练习建议
 
-- 先只把接口和 shape 跑通
-- 再补边界条件和异常输入
-- 最后口头说明时间复杂度与工程 tradeoff
+1. 排序 → 截取 top-k → softmax → 采样
+2. 注意数值稳定性（减 max trick）
+3. 口头比较 top-k 和 top-p

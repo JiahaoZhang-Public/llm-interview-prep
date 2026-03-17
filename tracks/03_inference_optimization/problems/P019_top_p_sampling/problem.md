@@ -1,17 +1,31 @@
-# P019 实现 top-p sampling
+# P019 实现 Top-P (Nucleus) Sampling
 
-## 题目目标
+## 背景
 
-围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
+**Top-P sampling**（nucleus sampling，Holtzman et al., 2020）是自适应采样策略。
+与 Top-K 不同，Top-P 根据累积概率动态确定候选集大小。
 
-## 要求
+**算法**：softmax → 按概率降序排序 → 累加到 >= p → 候选集即 nucleus → 重新归一化 → 采样
 
-- 实现 nucleus sampling。
-- 构造累计概率超过 p 的最小候选集合。
-- 返回一个 token id。
+p=1.0 = 全分布采样，p→0 = greedy。分布尖锐时 nucleus 小，分布平坦时 nucleus 大。
+
+## 接口规范
+
+```python
+def top_p_sample(logits: list[float], p: float) -> int:
+    """在累积概率 >= p 的最小候选集中随机采样"""
+```
+
+## 约束
+
+| 条件 | 说明 |
+|------|------|
+| p 范围 | 0 < p <= 1.0 |
+| 排序方向 | 从概率最高开始累加 |
+| 归一化 | nucleus 内采样前须重新归一化 |
 
 ## 练习建议
 
-- 先只把接口和 shape 跑通
-- 再补边界条件和异常输入
-- 最后口头说明时间复杂度与工程 tradeoff
+1. 分步：softmax → sort → cumsum → 截断 → renormalize → sample
+2. 思考 p=1.0 和 p→0 的退化行为
+3. 口头对比 top-k 和 top-p 的核心区别

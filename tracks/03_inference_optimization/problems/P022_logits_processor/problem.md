@@ -1,17 +1,32 @@
-# P022 实现支持 repetition penalty 的 logits processor
+# P022 实现 Repetition Penalty Logits Processor
 
-## 题目目标
+## 背景
 
-围绕指定接口实现一个可测试的最小版本，重点是正确性、shape 推导和边界处理。
+**Repetition penalty** 修改 logits 以降低已出现 token 被再次选中的概率。
 
-## 要求
+**公式（Keskar et al., 2019）：**
+- logit > 0：`logit / penalty`（变小）
+- logit < 0：`logit * penalty`（更负）
 
-- 输入 logits 和已生成 token ids。
-- 对重复 token 应用 repetition penalty。
-- 返回调整后的 logits。
+两种操作效果一致：降低重复 token 的概率。
+
+## 接口规范
+
+```python
+def apply_repetition_penalty(logits: list[float], generated_ids: list[int], penalty: float) -> list[float]:
+    """对已生成 token 施加 repetition penalty，返回调整后的 logits"""
+```
+
+## 约束
+
+| 条件 | 说明 |
+|------|------|
+| penalty | >= 1.0（1.0 无效果） |
+| generated_ids | 可能为空/有重复（去重处理） |
+| 不修改原列表 | 返回新列表 |
 
 ## 练习建议
 
-- 先只把接口和 shape 跑通
-- 再补边界条件和异常输入
-- 最后口头说明时间复杂度与工程 tradeoff
+1. 遍历 generated_ids，分正负处理
+2. 注意去重
+3. 思考 frequency penalty 和 repetition penalty 的区别
